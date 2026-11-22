@@ -29,17 +29,33 @@ content="https://yourwebsite.com/images/training.jpg">
 content="https://yourwebsite.com/">
 
 <meta property="og:type" content="website">
-    <script type="application/ld+json">
-
+    
+<!-- Organization Schema -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Digital Marketing Institute",
-  "url": "https://dasarivaralakshmi.github.io/technical-seo-practice/",
-  "description": "Digital marketing training and SEO education."
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dasarivaralakshmi.github.io/my-website/#organization",
+      "name": "My Digital Marketing Agency",
+      "url": "https://dasarivaralakshmi.github.io/my-website/",
+      "description": "Digital marketing agency providing SEO, social media marketing, Google Ads and online marketing services."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dasarivaralakshmi.github.io/my-website/#website",
+      "url": "https://dasarivaralakshmi.github.io/my-website/",
+      "name": "My Digital Marketing Agency",
+      "publisher": {
+        "@id": "https://dasarivaralakshmi.github.io/my-website/#organization"
+      },
+      "inLanguage": "en-IN"
+    }
+  ]
 }
-
 </script>
+
 </head>
    <body>
 
